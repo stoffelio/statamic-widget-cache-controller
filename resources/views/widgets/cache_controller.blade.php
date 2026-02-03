@@ -12,7 +12,7 @@
             <h3 class="font-bold mb-1">{{ __('Content Stache') }}</h3>
             <form method="POST" action="{{ cp_route('utilities.cache.clear', 'stache') }}">
                 @csrf
-                <button type="button" class="btn w-full">{{ __('Clear') }}</button>
+                <button type="submit" class="btn w-full">{{ __('Clear') }}</button>
             </form>
         </div>
         <div class="w-1/2 p-2">
@@ -20,7 +20,7 @@
             @if (config('statamic.static_caching.strategy'))
                 <form method="POST" action="{{ cp_route('utilities.cache.clear', 'static') }}">
                     @csrf
-                    <button type="button" class="btn w-full">{{ __('Clear') }}</button>
+                    <button type="submit" class="btn w-full">{{ __('Clear') }}</button>
                 </form>
             @else
                 disabled
@@ -30,20 +30,20 @@
             <h3 class="font-bold mb-1">{{ __('Application Cache') }}</h3>
             <form method="POST" action="{{ cp_route('utilities.cache.clear', 'application') }}">
                 @csrf
-                <button type="button" class="btn w-full">{{ __('Clear') }}</button>
+                <button type="submit" class="btn w-full">{{ __('Clear') }}</button>
             </form>
         </div>
         <div class="w-1/2 p-2">
             <h3 class="font-bold mb-1">{{ __('Image Cache') }}</h3>
             <form method="POST" action="{{ cp_route('utilities.cache.clear', 'image') }}">
                 @csrf
-                <button type="button" class="btn w-full">{{ __('Clear') }}</button>
+                <button type="submit" class="btn w-full">{{ __('Clear') }}</button>
             </form>
         </div>
         <div class="w-full p-2 border-t">
             <form method="POST" action="{{ cp_route('utilities.cache.clear', 'all') }}">
                 @csrf
-                <button type="button" class="btn-primary w-full">{{ __('Clear All') }}</button>
+                <button type="submit" class="btn-primary w-full">{{ __('Clear All') }}</button>
             </form>
         </div>
     </div>
