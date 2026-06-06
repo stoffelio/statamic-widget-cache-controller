@@ -4,7 +4,7 @@ This widget lets you empty all of Statamic's caches right from the control panel
 
 ## Requirements
 
-- Statamic v3
+- Statamic v6
 
 ## Installation
 
