@@ -1,25 +1,28 @@
 {
-    "name": "webographen/statamic-widget-cache-controller",
+    "name": "stoffelio/statamic-widget-cache-controller",
     "license": "MIT",
     "type": "statamic-addon",
     "description": "Clear Statamic's caches from the control panel",
+    "replace": {
+        "webographen/statamic-widget-cache-controller": "self.version"
+    },
     "autoload": {
-      "psr-4": {
-        "Webographen\\CacheController\\": "src"
-      }
+        "psr-4": {
+            "Stoffelio\\CacheController\\": "src"
+        }
     },
     "extra": {
-      "statamic": {
-        "name": "Statamic Widget: Cache Controller",
-        "description": "Clear Statamic's caches from the control panel"
-      },
-      "laravel": {
-        "providers": [
-          "Webographen\\CacheController\\ServiceProvider"
-        ]
-      }
+        "statamic": {
+            "name": "Statamic Widget: Cache Controller",
+            "description": "Clear Statamic's caches from the control panel"
+        },
+        "laravel": {
+            "providers": [
+                "Stoffelio\\CacheController\\ServiceProvider"
+            ]
+        }
     },
     "require": {
-      "statamic/cms": "^6.0"
+        "statamic/cms": "^6.0"
     }
-  }
+}

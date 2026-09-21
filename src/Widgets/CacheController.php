@@ -1,10 +1,8 @@
 <?php
 
-namespace Webographen\CacheController\Widgets;
+namespace Stoffelio\CacheController\Widgets;
 
 use Statamic\Widgets\Widget;
-use Statamic\Facades\Entry;
-use Statamic\Facades\Collection as CollectionAPI;
 
 class CacheController extends Widget
 {
@@ -15,6 +13,6 @@ class CacheController extends Widget
      */
     public function html()
     {
-        return view('webographen::widgets.cache_controller');
+        return view('stoffelio::widgets.cache_controller');
     }
 }

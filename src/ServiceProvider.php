@@ -1,13 +1,13 @@
 <?php
 
-namespace Webographen\CacheController;
+namespace Stoffelio\CacheController;
 
 use Statamic\Providers\AddonServiceProvider;
-use Webographen\CacheController\Widgets\CacheController;
+use Stoffelio\CacheController\Widgets\CacheController;
 
 class ServiceProvider extends AddonServiceProvider
 {
-    protected $viewNamespace = 'webographen';
+    protected $viewNamespace = 'stoffelio';
 
     protected $widgets = [
         CacheController::class
